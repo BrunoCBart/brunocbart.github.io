@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno's pixel art</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pixel Art</h1>
+    </header>
+    <div class="buttons-container">
+      <button id="clean-btn">Limpar</button>
+      <button id="vqv">VqV</button>
+      <button id="guide">Guia</button>
+    </div>
+    <section class="pixel-art__guide">
+      <ol>
+        <li>Clique em uma cor para seleciona-la</li>
+        <li>Clique e arraste para pintar no desktop</li>
+        <li>O botão limpar gera um novo quadro</li>
+        <li>O botão VqV gera uma nova paleta de cores</li>
+        <li>A borracha está nos cantos das paletas de cores</li>
+      </ol>
+    </section>
+    <section class="color-pallete__container">
+      <div class="d-flex">
+        <i class="fas fa-eraser eraser"></i>
+        <section class="color-pallete"></section>
+        <i class="fas fa-eraser eraser"></i>
+      </div>
+      <div class="pixel-board">
+        <section class="color-pallete"></section>
+        <div class="pixel-board__container" draggable="false"></div>
+        <section class="color-pallete"></section>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-eraser eraser"></i>
+        <section class="color-pallete"></section>
+        <i class="fas fa-eraser eraser"></i>
+      </div>
+    </section>
+    <footer>
+      <a
+        href="https://github.com/BrunoCBart/brunocbart.github.io/tree/main/assets/projetos/pixel-art"
+        target="_blank"
+      >
+        <i class="fab fa-github"></i>
+        <p>github</p>
+      </a>
+    </footer>
+    <div class="author">Projeto produzido por Bruno Bartolomeu</div>
+    <script src="main.js"></script>
+  </body>
+</html>

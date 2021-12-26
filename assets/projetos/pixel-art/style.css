@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Lato:wght@300&family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(82, 42, 87);
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgb(55, 28, 58);
+  width: 100%;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex i {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  color: rgb(163, 85, 174);
+  border-radius: 50%;
+  border: 2px solid rgb(163, 85, 174);
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.d-flex i:hover {
+  color: rgb(134, 69, 143);
+  border: 2px solid rgb(134, 69, 143);
+  transform: scale(1.1);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  margin-top: 1rem;
+}
+
+header h1 {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 5rem;
+  color: rgb(163, 85, 174);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.buttons-container button {
+  background-color: transparent;
+  border: 2px solid rgb(175, 54, 101);
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: rgb(175, 54, 101);
+  border-radius: 1rem;
+  font-family: "Lobster", sans-serif;
+  transition: all ease-in-out 100ms;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.buttons-container button:hover {
+  background: rgb(175, 54, 101);
+  color: #fff;
+}
+
+.pixel-board {
+  /* border: 1px solid black; */
+  /* padding: 1em; */
+  display: flex;
+  /* flex-direction: column; */
+  opacity: 0.9;
+}
+
+.pixel-board .color-pallete {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.pixel {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  border: 1px solid black;
+  background-color: white;
+  display: table-cell;
+}
+
+.color-pallete__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-pallete {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  /* background-color: black; */
+  cursor: pointer;
+}
+
+.color-selected {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 615px) {
+  .d-flex i {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .pixel {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+footer {
+  padding: 3rem 0;
+  background: rgb(55, 28, 58);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+footer i {
+  font-size: 2rem;
+}
+
+footer a {
+  color: rgb(159, 77, 170);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(128, 62, 136);
+}
+
+.author {
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.pixel-art__guide {
+  visibility: hidden;
+  height: 0;
+}
+
+.pixel-art__guide.active {
+  padding: 1rem 0;
+  visibility: visible;
+  color: rgb(180, 86, 192);
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  height: auto;
+}
