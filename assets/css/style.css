@@ -433,7 +433,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -56%);
   color: #fff;
   padding: 1rem;
   z-index: 99;
@@ -511,6 +511,7 @@ body {
   .project-desc {
     margin-left: 2rem;
     width: 70%;
+    transform: translate(-50%, -50%);
   }
 
   .project-desc p {
