@@ -197,6 +197,23 @@ body {
   }
 }
 
+.sapo {
+  position: absolute;
+  transition: all 0.4s ease-in-out
+}
+
+.sapo.jump {
+  transform: translateY(-150px);
+}
+
+.sapo.green {
+  color: #459e33;
+}
+
+.sapo-filling {
+  width: 10rem
+}
+
 /* Sections  Remove later! */
 
 @media screen and (min-width: 600px) {
@@ -428,6 +445,10 @@ body {
   background-image: url(../images/online-store.jpeg);
 }
 
+.receitas-da-vovo {
+  background-image: url(../images/receitas-da-vovo.jpeg)
+}
+
 .project-desc {
   background-color: rgb(63, 63, 63);
   position: fixed;
@@ -450,9 +471,9 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.project-desc__text-container {
+/* .project-desc__text-container {
   height: 150px;
-}
+} */
 
 .project-desc p {
   font-size: 0.8rem;
@@ -460,7 +481,7 @@ body {
 }
 
 .project-desc button {
-  padding: 0.7rem 1.7rem;
+  padding: 0.7rem 1.4rem;
   border: none;
   background-color: rgb(4, 194, 194);
   color: #fff;
@@ -517,9 +538,7 @@ body {
   .project-desc p {
     font-size: 1rem;
   }
-  .project-desc__text-container {
-    height: 150px;
-  }
+
   .desc-image {
     height: 220px;
   }

@@ -24,6 +24,22 @@ $(document).ready(function () {
   });
 });
 
+
+// --- Jumping frog
+
+const frogBtn = document.querySelector('.frogBtn')
+const sapo = document.querySelector('.sapo')
+
+frogBtn.addEventListener('click', () => {
+  sapo.classList.add('jump','green')
+  setTimeout(() => {
+    sapo.classList.remove('jump')
+  },400)
+  setTimeout(() => {
+    sapo.classList.remove('green')
+  }, 700)
+})
+
 // ----- Projects
 
 const projects = document.querySelectorAll(".project");
@@ -35,6 +51,7 @@ const spotitrybeDesc = document.querySelector(".spotitrybe-desc");
 const pixelartDesc = document.querySelector(".pixelart-desc");
 const todolistDesc = document.querySelector(".todolist-desc");
 const onlineStoreDesc = document.querySelector(".online-store-desc");
+const receitasDaVovoDesc = document.querySelector(".receitas-da-vovo-desc")
 
 const descCloseBtn = document.querySelectorAll(".project-desc__close-btn");
 const projectDesc = document.querySelectorAll(".project-desc");
@@ -46,6 +63,7 @@ const spotitrybeBtn = document.querySelector(".spotitrybe-btn");
 const pixelArtBtn = document.querySelector(".pixelart-btn");
 const todolistBtn = document.querySelector(".todolist-btn");
 const onlineStoreBtn = document.querySelector(".online-store-btn");
+const receitasDaVovoBtn = document.querySelector(".receitas-da-vovo-btn");
 
 projects.forEach((project) => {
   project.addEventListener("click", () => {
@@ -61,6 +79,8 @@ projects.forEach((project) => {
       todolistDesc.classList.add("desc-active");
     if (project.classList.contains("online-store"))
       onlineStoreDesc.classList.add("desc-active");
+    if(project.classList.contains("receitas-da-vovo"))
+      receitasDaVovoDesc.classList.add("desc-active")
   });
 });
 
@@ -95,6 +115,13 @@ onlineStoreBtn.addEventListener("click", () => {
   const url = "http://brunobcb-project-onlinestore.surge.sh/";
   window.open(url);
 });
+
+receitasDaVovoBtn.addEventListener("click", () => {
+  const url = "https://receitasdavovo-g1.surge.sh/";
+  window.open(url);
+});
+
+
 
 //  ------ Curriculum
 
