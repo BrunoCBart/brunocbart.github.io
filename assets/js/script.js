@@ -117,7 +117,7 @@ onlineStoreBtn.addEventListener("click", () => {
 });
 
 receitasDaVovoBtn.addEventListener("click", () => {
-  const url = "https://receitasdavovo-g1.surge.sh/";
+  const url = "https://g1-receitas-da-vovo.surge.sh/";
   window.open(url);
 });
 
