@@ -47,7 +47,6 @@ const projects = document.querySelectorAll(".project");
 // ---- Descricoes
 
 const tryunfoDesc = document.querySelector(".tryunfo-desc");
-const spotitrybeDesc = document.querySelector(".spotitrybe-desc");
 const pixelartDesc = document.querySelector(".pixelart-desc");
 const todolistDesc = document.querySelector(".todolist-desc");
 const onlineStoreDesc = document.querySelector(".online-store-desc");
@@ -59,7 +58,6 @@ const projectDesc = document.querySelectorAll(".project-desc");
 // --- Butões da descrição do projetos
 
 const tryunfoBtn = document.querySelector(".tryunfo-btn");
-const spotitrybeBtn = document.querySelector(".spotitrybe-btn");
 const pixelArtBtn = document.querySelector(".pixelart-btn");
 const todolistBtn = document.querySelector(".todolist-btn");
 const onlineStoreBtn = document.querySelector(".online-store-btn");
@@ -71,8 +69,6 @@ projects.forEach((project) => {
     if (previousDescActive) previousDescActive.classList.remove("desc-active");
     if (project.classList.contains("tryunfo"))
       tryunfoDesc.classList.add("desc-active");
-    if (project.classList.contains("spotitrybe"))
-      spotitrybeDesc.classList.add("desc-active");
     if (project.classList.contains("pixelart"))
       pixelartDesc.classList.add("desc-active");
     if (project.classList.contains("todolist"))
@@ -93,11 +89,6 @@ descCloseBtn.forEach((closeBtn) => {
 
 tryunfoBtn.addEventListener("click", () => {
   const url = "https://brunobcb-project-tryunfo.surge.sh/";
-  window.open(url);
-});
-
-spotitrybeBtn.addEventListener("click", () => {
-  const url = "./assets/projetos/spotitrybe/index.html";
   window.open(url);
 });
 
