@@ -103,7 +103,7 @@ todolistBtn.addEventListener("click", () => {
 });
 
 onlineStoreBtn.addEventListener("click", () => {
-  const url = "http://brunobcb-project-onlinestore.surge.sh/";
+  const url = "https://brunobcb-project-onlinestore.surge.sh/";
   window.open(url);
 });
 
