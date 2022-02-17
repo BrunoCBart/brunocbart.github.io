@@ -108,7 +108,7 @@ onlineStoreBtn.addEventListener("click", () => {
 });
 
 receitasDaVovoBtn.addEventListener("click", () => {
-  const url = "https://g1-receitas-da-vovo.surge.sh/";
+  const url = "https://bruno-g1-receitas-da-vovo.surge.sh/";
   window.open(url);
 });
 
