@@ -39,9 +39,9 @@ function makeBoard(board = 32) {
 }
 
 function randomColor() {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
+  const r = Math.floor(Math.random() * 256 + 1);
+  const g = Math.floor(Math.random() * 256 + 1);
+  const b = Math.floor(Math.random() * 256 + 1);
   return `rgb(${r},${g},${b})`;
 }
 
