@@ -96,7 +96,7 @@ window.addEventListener("mousedown", () => {
 
 window.addEventListener("mouseup", () => {
   draw = false;
-});
+}); 
 
 cleanBtn.addEventListener("click", () => {
   pixelBoard.innerHTML = "";
