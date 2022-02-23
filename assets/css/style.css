@@ -346,24 +346,36 @@ body {
 
 .d-flex-hab {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .habilidades {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .hab {
-  font-size: 50px;
+  width: 100px;
+  display:flex;
+  justify-content:center;
 }
 
-.hab + .hab {
-  margin-left: 20px;
+.hab-fa {
+  font-size: 50px;
+  margin-top: 1rem;
 }
 
 .flag {
   width: 50px;
+}
+
+.hab-img {
+  margin-top: 1rem;
+  width: 45px; 
+ 
 }
 
 @media screen and (min-width: 600px) {
@@ -375,13 +387,13 @@ body {
     width: 70px;
   }
 
-  .hab + .hab {
-    margin-left: 1em;
-  }
-
-  .hab {
+  .hab-fa {
     font-size: 4em;
   }
+
+  .hab-img { width: 55px; }
+
+  
 }
 
 /* Projects */
