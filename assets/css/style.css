@@ -358,14 +358,52 @@ body {
 }
 
 .hab {
-  width: 100px;
+  width: 90px;
+  height: 90px;
+  background-color: #dddddd94;
   display:flex;
+  align-items: center;
   justify-content:center;
+  margin: 0.5rem;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
+.hab::before,
+.hab::after {
+  --scale: 0;
+  content: "";
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(var(--scale));
+  cursor: initial;
+}
+
+.hab::before {
+  content: attr(data-tooltip);
+  color: white;
+  background-color: rgba(255, 81, 0, 0.863);
+  padding: 0.7rem; 
+  border-radius: 0.2rem;
+  width: max-content;
+  max-width: 80vw;
+  word-break: break-all;
+  font-size: 1.3rem;
+  text-align: center;
+  
+}
+
+.hab:hover::before {
+  --scale: 1;
+  content: attr(data-tooltip);
+}
+
+
 .hab-fa {
+  display: flex;
   font-size: 50px;
-  margin-top: 1rem;
 }
 
 .flag {
@@ -373,7 +411,6 @@ body {
 }
 
 .hab-img {
-  margin-top: 1rem;
   width: 45px; 
  
 }
@@ -392,8 +429,10 @@ body {
   }
 
   .hab-img { width: 55px; }
-
   
+  .hab::before {
+    width: 350px;
+  }
 }
 
 /* Projects */
@@ -712,7 +751,6 @@ textarea {
 input[type="text"]:focus,
 textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  /* margin: 5px 1px 3px 0px; */
   border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -720,8 +758,7 @@ textarea:focus {
   position: fixed;
   bottom: 4.5rem;
   right: 1rem;
-  
-  /* background-color: #fff; */
+
 }
 
 .wpp-container a {
@@ -737,6 +774,5 @@ textarea:focus {
   .wpp-container {
     bottom: 2rem;
     right: 1.3rem;
-    /* background-color: #fff; */
   }
 }
