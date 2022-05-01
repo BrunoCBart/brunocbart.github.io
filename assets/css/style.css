@@ -395,6 +395,10 @@ body {
   
 }
 
+.hab:hover {
+  background-color: #c1df89bb;
+}
+
 .hab:hover::before {
   --scale: 1;
   content: attr(data-tooltip);
