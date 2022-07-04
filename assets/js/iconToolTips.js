@@ -1,13 +1,13 @@
-const usaFlag = 'Sou fluente em inglês  🇱🇷';
-const html = 'Html (linguagem de marcação) semântico é muito importante para rankear alto em SEO. 💁';
-const css = 'CSS é uma linguagem de estilos, responsável por estlizar sites. 🤹';
-const js = 'JavaScript é uma linguagem de programação. 💻';
-const git = 'Git é um sistema de controle de versão. 💽';
-const node = 'Node é uma linguagem de programação, uso ela com o express para criar o backend. 💻';
-const mysql = 'MySQL é uma linguagem de banco de dados. 💽';
-const react = 'React é um framework de javascript que facilita a criação de aplicações web. 😸';
-const docker = 'Docker é um sistema de gerenciamento de imagens e containers. 🤓';
-const typescript = 'Typescript é uma linguagem de programação que "tipa" o javascript deixa ele mais robusto 👊' ;
+const usaFlag = 'I speak fluent english  🇱🇷';
+const html = 'Semantic html (markup language) is very important to rank high in SEO. 💁';
+const css = 'CSS is a styling language, responsible for styling websites. 🤹';
+const js = 'JavaScript is a programming language. 💻';
+const git = 'Git is a version control system. 💽';
+const node = 'Node is a programming language, I use it with express to create the backend. 💻';
+const mysql = 'MySQL is a database language. 💽';
+const react = 'React is a javascript framework that makes it easy to create web applications. 😸';
+const docker = 'Docker is an image and container management system. 🤓';
+const typescript = 'Typescript is a programming language that "types" javascript makes it more robust 👊' ;
 
 const iconToolTips = {
   usaFlag,
